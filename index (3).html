@@ -1,0 +1,764 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Essence Empire | Premium Perfumes</title>
+<meta name="description" content="Essence Empire - Premium perfumes and fragrances. 6ml perfumes starting at ৳200 with delivery across Bangladesh.">
+<meta name="keywords" content="Essence Empire, perfume Bangladesh, Dior Sauvage, Bleu de Chanel, Cool Water, One Million, Vampire Blood"><style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0b0b0d;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* NAVBAR */
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(11,11,13,.96);
+    border-bottom:1px solid #292929;
+}
+
+.nav-inner{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#d9ad55;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#ddd;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d9ad55;
+}
+
+.nav-btn{
+    background:#d9ad55;
+    color:#111 !important;
+    padding:10px 17px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    min-height:calc(100vh - 70px);
+    display:flex;
+    align-items:center;
+    background:
+    radial-gradient(circle at 80% 30%,rgba(217,173,85,.18),transparent 30%),
+    radial-gradient(circle at 20% 80%,rgba(217,173,85,.08),transparent 30%),
+    #0b0b0d;
+}
+
+.hero-content{
+    max-width:760px;
+    padding:80px 0;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid #725c31;
+    color:#d9ad55;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,82px);
+    line-height:1.02;
+    letter-spacing:-3px;
+    margin-bottom:22px;
+}
+
+.gold{
+    color:#d9ad55;
+}
+
+.hero p{
+    color:#bdbdbd;
+    max-width:620px;
+    font-size:17px;
+    margin-bottom:32px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:30px;
+    font-weight:bold;
+    border:1px solid #d9ad55;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#d9ad55;
+    color:#111;
+}
+
+.btn-secondary{
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* SECTIONS */
+section{
+    padding:85px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title span{
+    color:#d9ad55;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-top:7px;
+}
+
+.section-title p{
+    color:#999;
+    max-width:600px;
+    margin:10px auto 0;
+}
+
+/* PRODUCTS */
+.products{
+    background:#101012;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+.product{
+    background:#171719;
+    border:1px solid #29292b;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-7px);
+    border-color:#80672f;
+}
+
+.product-image{
+    height:245px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.size{
+    color:#999;
+    font-size:13px;
+}
+
+.price{
+    color:#d9ad55;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0 15px;
+}
+
+.order-btn{
+    display:block;
+    text-align:center;
+    padding:11px;
+    border-radius:10px;
+    background:#d9ad55;
+    color:#111;
+    font-weight:bold;
+}
+
+/* ABOUT */
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-box{
+    padding:35px;
+    background:#151517;
+    border:1px solid #292929;
+    border-radius:20px;
+}
+
+.about-box h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#aaa;
+    margin-bottom:15px;
+}
+
+/* FEATURES */
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:#151517;
+    border:1px solid #292929;
+    padding:30px;
+    border-radius:18px;
+}
+
+.feature-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#999;
+}
+
+/* DELIVERY */
+.delivery{
+    background:#101012;
+}
+
+.delivery-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.info-card{
+    background:#171719;
+    border:1px solid #292929;
+    border-radius:18px;
+    padding:30px;
+}
+
+.info-card h3{
+    color:#d9ad55;
+    margin-bottom:15px;
+}
+
+.info-card p{
+    color:#aaa;
+    margin:8px 0;
+}
+
+/* ORDER */
+.order-section{
+    background:#0b0b0d;
+}
+
+.order-box{
+    max-width:720px;
+    margin:auto;
+    background:#151517;
+    border:1px solid #292929;
+    border-radius:22px;
+    padding:35px;
+}
+
+.order-box h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:16px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:7px;
+    color:#ccc;
+    font-size:14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:13px 14px;
+    background:#0d0d0f;
+    border:1px solid #333;
+    border-radius:10px;
+    color:#fff;
+    outline:none;
+    font-size:15px;
+}
+
+.form-group textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#d9ad55;
+}
+
+.submit{
+    width:100%;
+    border:0;
+    padding:15px;
+    background:#d9ad55;
+    color:#111;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* CONTACT */
+.contact-box{
+    text-align:center;
+    background:linear-gradient(135deg,#171719,#101012);
+    border:1px solid #292929;
+    padding:50px 25px;
+    border-radius:25px;
+}
+
+.contact-box h2{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.contact-box p{
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+/* FOOTER */
+footer{
+    border-top:1px solid #292929;
+    padding:30px 0;
+    text-align:center;
+    color:#777;
+}
+
+.footer-logo{
+    color:#d9ad55;
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:7px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+/* MOBILE */
+@media(max-width:1000px){
+    .product-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-content{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid,
+    .delivery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .product-image{
+        height:210px;
+    }
+}
+
+@media(max-width:450px){
+    .container{
+        width:92%;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-image{
+        height:270px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .section-title h2{
+        font-size:31px;
+    }
+
+    .order-box{
+        padding:23px;
+    }
+}
+</style></head><body><!-- NAVBAR --><header class="navbar">
+<div class="container nav-inner"><a href="#home" class="logo">ESSENCE EMPIRE</a>
+
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#delivery">Delivery</a>
+<a href="#order" class="nav-btn">Order Now</a>
+</nav></div>
+</header><!-- HERO --><section class="hero" id="home">
+<div class="container">
+<div class="hero-content"><div class="badge">PREMIUM FRAGRANCES • BANGLADESH</div><h1>
+Find Your<br>
+<span class="gold">Signature Scent.</span>
+</h1><p>
+Discover premium fragrances made for confidence, elegance and everyday style.
+Choose your favorite scent from Essence Empire and order easily through WhatsApp.
+</p><div class="buttons">
+<a href="#products" class="btn btn-primary">Explore Collection</a>
+<a href="#order" class="btn btn-secondary">Order Now →</a>
+</div></div>
+</div>
+</section><!-- PRODUCTS --><section class="products" id="products"><div class="container"><div class="section-title">
+<span>Our Collection</span>
+<h2>Popular Fragrances</h2>
+<p>Premium-inspired fragrances in a convenient 6ml size.</p>
+</div><div class="product-grid"><div class="product">
+<div class="product-image">
+<img src="/index.html/vampire blood.jpg">
+</div>
+<div class="product-info">
+<h3>Vampire Blood</h3>
+<div class="size">6 ml • Premium Fragrance</div>
+<div class="price">৳999</div>
+<a class="order-btn" href="#order" onclick="selectProduct('Vampire Blood')">Order Now</a>
+</div>
+</div><div class="product">
+<div class="product-image">
+<img src="/index.html/Dior sauvage.jpg">
+</div>
+<div class="product-info">
+<h3>Dior Sauvage</h3>
+<div class="size">6 ml • Premium Fragrance</div>
+<div class="price">৳999</div>
+<a class="order-btn" href="#order" onclick="selectProduct('Dior Sauvage')">Order Now</a>
+</div>
+</div><div class="product">
+<div class="product-image">
+<img src="/index.html/cool water.jpg">
+</div>
+<div class="product-info">
+<h3>Cool Water</h3>
+<div class="size">6 ml • Premium Fragrance</div>
+<div class="price">৳999</div>
+<a class="order-btn" href="#order" onclick="selectProduct('Cool Water')">Order Now</a>
+</div>
+</div><div class="product">
+<div class="product-image">
+<img src="/index.html/Bleu de chanel.jpg">
+</div>
+<div class="product-info">
+<h3>Bleu de Chanel</h3>
+<div class="size">6 ml • Premium Fragrance</div>
+<div class="price">৳999</div>
+<a class="order-btn" href="#order" onclick="selectProduct('Bleu de Chanel')">Order Now</a>
+</div>
+</div><div class="product">
+<div class="product-image">
+<img src="/index.html/vercase.jpg">
+</div>
+<div class="product-info">
+<h3>Versace</h3>
+<div class="size">6 ml • Premium Fragrance</div>
+<div class="price">৳999</div>
+<a class="order-btn" href="#order" onclick="selectProduct('Versace')">Order Now</a>
+</div>
+</div></div>
+</div>
+</section><!-- ABOUT --><section id="about"><div class="container"><div class="section-title">
+<span>About Us</span>
+<h2>Essence Empire</h2>
+</div><div class="about-grid"><div class="about-box">
+<h3>Fragrance That Speaks For You.</h3>
+<p>
+At Essence Empire, we believe a great fragrance is more than just a scent.
+It becomes part of your personality and your everyday presence.
+</p>
+<p>
+Our collection is selected for people who want premium fragrance experiences
+in a simple and affordable 6ml format.
+</p>
+</div><div class="about-box">
+<h3>Why Essence Empire?</h3>
+<p>✓ Premium fragrance collection</p>
+<p>✓ Affordable price — only ৳200</p>
+<p>✓ Easy WhatsApp ordering</p>
+<p>✓ Delivery across Bangladesh</p>
+<p>✓ Cash on Delivery available</p>
+</div></div>
+</div>
+</section><!-- FEATURES --><section><div class="container"><div class="section-title">
+<span>Why Choose Us</span>
+<h2>Simple. Premium. Reliable.</h2>
+</div><div class="features"><div class="feature">
+<div class="feature-icon">✦</div>
+<h3>Premium Scents</h3>
+<p>Explore a carefully selected collection of popular fragrance profiles.</p>
+</div><div class="feature">
+<div class="feature-icon">৳</div>
+<h3>Affordable Price</h3>
+<p>Every listed perfume is available in a 6ml bottle for only ৳200.</p>
+</div><div class="feature">
+<div class="feature-icon">⚡</div>
+<h3>Easy Ordering</h3>
+<p>Place your order directly through WhatsApp without complicated checkout.</p>
+</div></div>
+</div>
+</section><!-- DELIVERY --><section class="delivery" id="delivery"><div class="container"><div class="section-title">
+<span>Delivery & Payment</span>
+<h2>Everything You Need To Know</h2>
+</div><div class="delivery-grid"><div class="info-card">
+<h3>🚚 Delivery</h3>
+<p><strong>Dhaka:</strong> ৳100</p>
+<p><strong>Outside Dhaka:</strong> ৳120</p>
+<p><strong>Estimated delivery:</strong> 3 days</p>
+</div><div class="info-card">
+<h3>💳 Payment</h3>
+<p>✓ Cash on Delivery</p>
+<p>✓ bKash payment</p>
+<p>For bKash payment details, contact us on WhatsApp.</p>
+</div></div>
+</div>
+</section><!-- ORDER --><section class="order-section" id="order"><div class="container"><div class="section-title">
+<span>Place Your Order</span>
+<h2>Order Your Fragrance</h2>
+<p>Fill in the details below and send your order directly to WhatsApp.</p>
+</div><div class="order-box"><div class="form-group">
+<label>Your Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+</div><div class="form-group">
+<label>Phone Number</label>
+<input type="tel" id="phone" placeholder="01805205507">
+</div><div class="form-group">
+<label>Select Product</label>
+<select id="product">
+<option value="">Choose a perfume</option>
+<option>Vampire Blood</option>
+<option>Dior Sauvage</option>
+<option>Cool Water</option>
+<option>Bleu de Chanel</option>
+<option>One Million</option>
+</select>
+</div><div class="form-group">
+<label>Quantity</label>
+<input type="number" id="quantity" value="1" min="1">
+</div><div class="form-group">
+<label>Delivery Area</label>
+<select id="area">
+<option value="">Choose delivery area</option>
+<option value="Dhaka">Dhaka — ৳100</option>
+<option value="Outside Dhaka">Outside Dhaka — ৳120</option>
+</select>
+</div><div class="form-group">
+<label>Full Address</label>
+<textarea id="address" placeholder="Enter your complete delivery address"></textarea>
+</div><button class="submit" onclick="sendOrder()">
+Order via WhatsApp
+</button></div>
+</div>
+</section><!-- CONTACT --><section id="contact"><div class="container"><div class="contact-box"><h2>Need Help?</h2><p>
+For product information, bKash payment details or any questions,
+contact Essence Empire directly.
+</p><div class="buttons" style="justify-content:center;">
+<a class="btn btn-primary" href="https://wa.me/8801805205507" target="_blank">
+WhatsApp Us
+</a><a class="btn btn-secondary" href="tel:+8801805205507">
+Call 01805205507
+</a>
+</div></div>
+</div>
+</section><!-- FOOTER --><footer><div class="container"><div class="footer-logo">ESSENCE EMPIRE</div><p>Premium Fragrances • Bangladesh</p><p style="margin-top:8px;">
+© 2026 Essence Empire. All Rights Reserved.
+</p></div>
+</footer><!-- WHATSAPP FLOAT --><a class="whatsapp" href="https://wa.me/8801805205507" target="_blank" aria-label="WhatsApp">
+☎
+</a><script>
+
+function selectProduct(productName){
+
+    document.getElementById("product").value = productName;
+
+}
+
+function sendOrder(){
+
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var product = document.getElementById("product").value;
+    var quantity = document.getElementById("quantity").value;
+    var area = document.getElementById("area").value;
+    var address = document.getElementById("address").value.trim();
+
+    if(name === "" || phone === "" || product === "" || area === "" || address === ""){
+
+        alert("Please fill in all required information.");
+
+        return;
+    }
+
+    var productTotal = 200 * Number(quantity);
+
+    var delivery = 0;
+
+    if(area === "Dhaka"){
+        delivery = 100;
+    }
+
+    if(area === "Outside Dhaka"){
+        delivery = 120;
+    }
+
+    var total = productTotal + delivery;
+
+    var message =
+        "Hello Essence Empire!%0A%0A" +
+        "*NEW ORDER*%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Product: " + encodeURIComponent(product) + "%0A" +
+        "Quantity: " + encodeURIComponent(quantity) + "%0A" +
+        "Area: " + encodeURIComponent(area) + "%0A" +
+        "Delivery Charge: ৳" + delivery + "%0A" +
+        "Product Total: ৳" + productTotal + "%0A" +
+        "Total: ৳" + total + "%0A" +
+        "Address: " + encodeURIComponent(address);
+
+    window.open(
+        "https://wa.me/8801805205507?text=" + message,
+        "_blank"
+    );
+}
+
+</script></body>
+</html>
